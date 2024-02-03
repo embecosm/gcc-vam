@@ -1421,6 +1421,9 @@ See RS/6000 and PowerPC Options.
 -mrh850-abi
 -mbig-switch}
 
+@emph{VAM Options}
+@gccoptlist{-msoft-mul -mhard-mul -msoft-div -mhard-div}
+
 @emph{VAX Options}
 @gccoptlist{-mg  -mgnu  -munix  -mlra}
 

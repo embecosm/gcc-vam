@@ -261,6 +261,7 @@ TARGET_SPECIFIC_PAGES = {
     'gcc/SPARC-Options.html' : 'gcc/config/sparc/',
     'gcc/S_002f390-and-zSeries-Options.html' : 'gcc/config/s390',
     'gcc/V850-Options.html' : 'gcc/config/vax/',
+    'gcc/VAM-Options.html' : 'gcc/config/vam/',
     'gcc/VAX-Options.html' : 'gcc/config/v850/',
     'gcc/Visium-Options.html' : 'gcc/config/visium/',
     'gcc/Xstormy16-Options.html' : 'gcc/config/stormy16/',

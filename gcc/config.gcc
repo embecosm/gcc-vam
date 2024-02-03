@@ -3558,6 +3558,9 @@ v850*-*-*)
 	cxx_target_objs="v850-c.o"
 	use_gcc_stdint=wrap
 	;;
+vam-*-elf)
+	tm_file="elfos.h ${tm_file}"
+	;;
 vax-*-linux*)
 	tm_file="${tm_file} elfos.h gnu-user.h linux.h glibc-stdint.h vax/elf.h vax/linux.h"
 	extra_options="${extra_options} vax/elf.opt"

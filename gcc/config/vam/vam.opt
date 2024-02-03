@@ -1,0 +1,42 @@
+; VAM command line options
+
+; Copyright (C) 2010-2024 Free Software Foundation, Inc.
+;
+; This file is part of GCC.
+;
+; GCC is free software; you can redistribute it and/or modify it under
+; the terms of the GNU General Public License as published by the Free
+; Software Foundation; either version 3, or (at your option) any later
+; version.
+;
+; GCC is distributed in the hope that it will be useful, but WITHOUT ANY
+; WARRANTY; without even the implied warranty of MERCHANTABILITY or
+; FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+; for more details.
+;
+; You should have received a copy of the GNU General Public License
+; along with GCC; see the file COPYING3.  If not see
+; <http://www.gnu.org/licenses/>.
+
+; See the GCC internals manual (options.texi) for a description of
+; this file's format.
+
+mhard-div
+Target RejectNegative InverseMask(SOFT_DIV)
+Enable generation of the hardware divide (DIV) instruction.  This is the
+default; use -msoft-div to override.
+
+msoft-div
+Target RejectNegative Mask(SOFT_DIV)
+Enable generation of binaries which use functions from libgcc to perform divide
+operations.  The default is -mhard-div.
+
+mhard-mul
+Target RejectNegative InverseMask(SOFT_MUL).
+Enable generation of the hardware multiply (MUL) instruction instruction.
+This is the default; use -msoft-mul to override.
+
+msoft-mul
+Target RejectNegative Mask(SOFT_MUL).
+Enable generation of binaries which use functions from libgcc to perform
+multiply operations. The default is -mhard-mul.

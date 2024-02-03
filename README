@@ -1,5 +1,8 @@
 This directory contains the GNU Compiler Collection (GCC).
 
+NOTE.  This is a fork, specifically for teaching purposes.  See
+README.VAM.md for more information.
+
 The GNU Compiler Collection is free software.  See the files whose
 names start with COPYING for copying permission.  The manuals, and
 some of the runtime libraries, are under different terms; see the
